@@ -9,6 +9,7 @@ If you don't know how this game works, you should [consult this reference](https
 ### Prerequisites 📋
 You will need to have Python3 installed on your device as well as PyQt5.
 I recommend that you install the same version of PyQt5 that I used, using `pip install -r requirements.txt`.
+
 I strongly recommend you using your own [virtual environment](https://towardsdatascience.com/virtual-environments-104c62d48c54#:~:text=A%20virtual%20environment%20is%20a,a%20system%2Dwide%20Python.).
 
 
