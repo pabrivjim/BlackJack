@@ -5,10 +5,7 @@
 # Version: 1.0.0
 # Author: Pablo Rivera Jiménez
 # --------------------------------------------------------------------------
-import os
 import sys
-from PyQt5.QtCore import (QTranslator, QSettings)
-from PyQt5.QtGui import QGuiApplication
 from PyQt5.QtWidgets import QApplication
 from blackjack.view.main_window import MainWindow
 

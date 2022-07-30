@@ -30,13 +30,20 @@ def calculate_points(cards):
     points = 0
     for card in cards:
         if(str(card[0]).isdigit()):
-            points += int(card[0])
+            if(int(card[0]) == 1):
+                points += 10
+            else:
+                points += int(card[0])
+            print("Digit ", card[0], " ", points)
         elif(str(card[0]) == "a"):
             aces +=1
             points += 11
+            print("Ace ", points)
         elif(str(card[0]).isalpha()):
             points += 10
+            print("Alpha ", card[0], " ", points)
     while(points>21 and aces>0):
         points -= 10
         aces -= 1
+    print(points)
     return points
