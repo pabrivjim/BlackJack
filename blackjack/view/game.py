@@ -1,9 +1,8 @@
 import os
-import time
-from PyQt5.QtWidgets import QMainWindow, QWidget, QVBoxLayout, QHBoxLayout, QFrame, QLabel, QSplitter, QGraphicsOpacityEffect
+from PyQt5.QtWidgets import QWidget, QVBoxLayout, QHBoxLayout, QFrame, QLabel, QSplitter
 from PyQt5.QtGui import QPixmap
-from PyQt5.QtCore import Qt, QObjectCleanupHandler, QEasingCurve
-from PyQt5 import QtCore, QtWidgets, QtWebEngineWidgets, QtTest
+from PyQt5.QtCore import Qt, QObjectCleanupHandler
+from PyQt5 import QtCore, QtWebEngineWidgets, QtTest
 from blackjack.utils.utils import get_random_card, calculate_points
 
 # We init the list with the joker in it because it will be use like
@@ -22,13 +21,13 @@ class Game(QWidget):
         self.parent.start_button.hide()
         #Countdown animation
         self.view = QtWebEngineWidgets.QWebEngineView()
-        # file = os.path.join(
-        #     os.path.dirname(os.path.realpath(__file__)), 
-        #     "../resources/html/countdown.html"
-        # )
-        # self.view.load(QtCore.QUrl.fromLocalFile(file))
-        # self.parent.widget.layout().addWidget(self.view, alignment=Qt.AlignCenter)
-        # QtTest.QTest.qWait(6000)
+        file = os.path.join(
+            os.path.dirname(os.path.realpath(__file__)), 
+            "../resources/html/countdown.html"
+        )
+        self.view.load(QtCore.QUrl.fromLocalFile(file))
+        self.parent.widget.layout().addWidget(self.view, alignment=Qt.AlignCenter)
+        QtTest.QTest.qWait(6000)
         self.view.hide()
 
         self.parent.Hit.show()

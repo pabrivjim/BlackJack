@@ -10,8 +10,6 @@ from PyQt5.QtWidgets import QApplication
 from blackjack.view.main_window import MainWindow
 
 
-
-
 class App(QApplication):
     """
     Esta es la clase que se utiliza para iniciar la aplicación.

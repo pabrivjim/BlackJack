@@ -1,4 +1,4 @@
-from PyQt5.QtWidgets import QMainWindow, QWidget, QPushButton, QHBoxLayout, QVBoxLayout, QGridLayout
+from PyQt5.QtWidgets import QMainWindow, QWidget, QPushButton, QHBoxLayout, QGridLayout
 from PyQt5.QtCore import Qt
 from PyQt5 import uic
 
